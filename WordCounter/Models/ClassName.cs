@@ -35,6 +35,25 @@ namespace WordCounter
       }
     }
 
+    public bool SentenceCheckNumbers()
+    {
+      char[] wordchars = Sentence.ToCharArray();
+      for (int i = 0; i < Sentence.Length; i++)
+      {
+        for (int b = 0; b < 10; b++)
+        {
+          if (wordchars[i].ToString() == b.ToString())
+          {
+            return false;
+          }
+        }
+      }
+      return true;
+      {
+      }
+    }
+
+
     // public bool WordCheckOtherExpressions()
     // {
 
