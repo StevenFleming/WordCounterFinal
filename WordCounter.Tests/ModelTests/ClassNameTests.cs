@@ -1,11 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Project.Models;
+using WordCounter;
 
 namespace Project.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class WordCounterTests
   {
+    [TestMethod]
+    public void RepeatWordCounterConstructor_TakesAStringAsParameterAndReturnsItLowerCase_RepeatCounter()
+    {
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
+      Assert.AreEqual(newCounter.Word, "hello");
+    }
 
   }
 }
