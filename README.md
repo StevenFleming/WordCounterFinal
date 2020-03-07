@@ -1,13 +1,12 @@
-# Project Name (C# Console Application)
+# WordCounter (C# Console Application)
 
-#### A An console-based application to simulate ... where the user can ... hosted on [GitHub](https://github.com/KristaRutz/). _Last Updated 03.03.2020._
+#### A An console-based application check how many times a word appears in block of text. Hosted on [GitHub](https://github.com/StevenFleming/). _Last Updated 03.03.2020._
 
-#### By _**Krista Rutz, [other contributors]**_
+#### By _**Steven Fleming**_
 
 ## Description
 
-This application lets the user... and does...
-It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/). It does so using this and this technology or concept.
+This application lets the user input text and a word they would like to check for. The app then returns the number of times this word appears in the text.
 
 ## Installation / Set-up
 
@@ -18,7 +17,7 @@ Download or clone the repository to run this program locally! _This program requ
     - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/) site
     - Once downloaded, open the ZIP and extract files. The new folder will be created as 'ProjectName.Solution'.
   - **To Clone:**
-    - Clone from command line into your Desktop: `$ git clone https://github.com/KristaRutz/...`
+    - Clone from command line into your Desktop: `$ git clone https://github.com/StevenFleming/...`
     - The new directory will be created as 'Desktop/ProjectName.Solution'.
 - Once you have stored the files locally, execute the following commands.
   - Navigate to the application directory: `$ cd ProjectName.Solution/ProjectName`
@@ -56,7 +55,7 @@ Download or clone the repository to run this program locally! _This program requ
 
 ## Support and contact details
 
-Please contact me if you run into any issues or have questions, ideas or concerns. I can be contacted at <krista.rutz@pomona.edu>. Feel free to create a pull request for updates - _contributions to the code are encouraged!_
+Please contact me if you run into any issues or have questions, ideas or concerns. I can be contacted at <12flemings@gmail.com>. Feel free to create a pull request for updates - _contributions are encouraged!_
 
 ### License
 
