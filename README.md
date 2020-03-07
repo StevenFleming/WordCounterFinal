@@ -14,7 +14,7 @@ Download or clone the repository to run this program locally! _This program requ
 
 - Download or clone this repo.
   - **To Download ZIP:**
-    - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/) site
+    - Select "Download" on the [GitHub Repository](https://github.com/StevenFleming/) site
     - Once downloaded, open the ZIP and extract files. The new folder will be created as 'ProjectName.Solution'.
   - **To Clone:**
     - Clone from command line into your Desktop: `$ git clone https://github.com/StevenFleming/...`
@@ -36,8 +36,14 @@ Download or clone the repository to run this program locally! _This program requ
   <summary>Expand specs for this project</summary>
 
 | Spec | Example Input | Expected Output |
-| :--- | :------------ | :-------------- |
-
+| Checks if Word Contains Numbers| Hello | Not a Word, Please type again |
+| Checks if Word Contains nonletter characters| Hello!| Not a Word, Please type again |
+|Takes the Word and moves converts it to lowercase Characters| HELLO | hello|
+| Takes the String and converts it to lowercase| Hi Bill| hi bill|
+| Splits string at spaces and creates an array of words| Hi Bill| hi, bill|
+| Removes nonletter characters at the ends of words| Hi Bill!| hi, bill|
+| Removes nonletter characters at the begining of words| !Hi Bill!| hi, bill|
+| Returns number of matches user word has within the array| userword: hi, userstring: !Hi Bill!| 1|
 
 </details>
 <details>
@@ -59,7 +65,7 @@ Please contact me if you run into any issues or have questions, ideas or concern
 
 ### License
 
-Copyright (c) 2020 **_Krista Rutz, [Others]_**
+Copyright (c) 2020 **\_Steven_Fleming**
 
 _This software is licensed under the MIT license._
 
