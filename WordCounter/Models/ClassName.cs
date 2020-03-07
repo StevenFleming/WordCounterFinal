@@ -19,9 +19,21 @@ namespace WordCounter
 
     public bool WordCheckNumbers()
     {
-
+      char[] wordchars = Word.ToCharArray();
+      for (int i = 0; i < Word.Length; i++)
+      {
+        for (int b = 0; b < 10; b++)
+        {
+          if (wordchars[i].ToString() == b.ToString())
+          {
+            return false;
+          }
+        }
+      }
+      return true;
+      {
+      }
     }
-
     // public bool WordCheckOtherExpressions()
     // {
 

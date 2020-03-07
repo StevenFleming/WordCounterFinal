@@ -28,9 +28,9 @@ namespace Project.Tests
     }
 
     [TestMethod]
-    public void RepeatWordCounter_ReturnsCountofMatchingWordsinSentence_SentenceCheckWord()
+    public void RepeatWordCounter_ChecksforNumbers_SentenceCheckWord()
     {
-      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hel2lo1", "Hello There");
       Assert.AreEqual(newCounter.WordCheckNumbers(), false);
     }
   }
