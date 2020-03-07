@@ -17,10 +17,27 @@ namespace WordCounter
       Sentence = sentence.ToLower();
     }
 
-    public string SentenceArrayCreator()
+    // public bool WordCheckNumbers()
+    // {
+
+    // }
+
+    // public bool WordCheckOtherExpressions()
+    // {
+
+    // }
+
+    public int SentenceCheckWord()
     {
       string[] sentenceArray = Sentence.Split(' ');
-      return sentenceArray[0];
+      for (int i = 0; i < sentenceArray.Length; i++)
+      {
+        if (sentenceArray[i] == Word)
+        {
+          MatchCount++;
+        }
+      }
+      return MatchCount;
     }
   }
 }

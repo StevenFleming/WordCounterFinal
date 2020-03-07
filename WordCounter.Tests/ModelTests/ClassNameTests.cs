@@ -13,11 +13,18 @@ namespace Project.Tests
       Assert.AreEqual(newCounter.Word, "hello");
     }
 
-    [TestMethod]
-    public void RepeatWordCounter_TakesSentenceAndMakesAnArray_RepeatWordCounter()
+    // Test to check for Word input no longer vaild
+    public void RepeatWordCounter_TakesSentenceAndMakesAnArray_SentenceCheckWord()
     {
       RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
-      Assert.AreEqual(newCounter.SentenceArrayCreator(), "hello");
+      Assert.AreEqual(newCounter.SentenceCheckWord(), "hello");
+    }
+
+    [TestMethod]
+    public void RepeatWordCounter_ReturnsCountofMatchingWordsinSentence_SentenceCheckWord()
+    {
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
+      Assert.AreEqual(newCounter.SentenceCheckWord(), 1);
     }
 
   }
