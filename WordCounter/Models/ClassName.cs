@@ -17,10 +17,10 @@ namespace WordCounter
       Sentence = sentence.ToLower();
     }
 
-    // public bool WordCheckNumbers()
-    // {
+    public bool WordCheckNumbers()
+    {
 
-    // }
+    }
 
     // public bool WordCheckOtherExpressions()
     // {

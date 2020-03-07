@@ -27,5 +27,11 @@ namespace Project.Tests
       Assert.AreEqual(newCounter.SentenceCheckWord(), 1);
     }
 
+    [TestMethod]
+    public void RepeatWordCounter_ReturnsCountofMatchingWordsinSentence_SentenceCheckWord()
+    {
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
+      Assert.AreEqual(newCounter.WordCheckNumbers(), false);
+    }
   }
 }
