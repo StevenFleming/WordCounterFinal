@@ -6,7 +6,7 @@ namespace Project
   {
     public static void Main()
     {
-
+      
     }
   }
 }
