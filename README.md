@@ -1,6 +1,6 @@
 # WordCounter (C# Console Application)
 
-#### A An console-based application check how many times a word appears in block of text. Hosted on [GitHub](https://github.com/StevenFleming/). _Last Updated 03.03.2020._
+#### A console-based application check how many times a word appears in block of text. Hosted on [GitHub](https://github.com/StevenFleming/). _Last Updated 03.03.2020._
 
 #### By _**Steven Fleming**_
 
