@@ -33,5 +33,12 @@ namespace Project.Tests
       RepeatWordCounter newCounter = new RepeatWordCounter("Hel2lo1", "Hello There");
       Assert.AreEqual(newCounter.WordCheckNumbers(), false);
     }
+
+    [TestMethod]
+    public void RepeatWordCounter_ChecksforNumbers_SentenceCheckWord()
+    {
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hel3lo Th3ere");
+      Assert.AreEqual(newCounter.WordCheckNumbers(), false);
+    }
   }
 }

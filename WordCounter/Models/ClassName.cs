@@ -34,6 +34,7 @@ namespace WordCounter
       {
       }
     }
+
     // public bool WordCheckOtherExpressions()
     // {
 
