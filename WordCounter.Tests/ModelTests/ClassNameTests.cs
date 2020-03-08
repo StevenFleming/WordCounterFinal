@@ -53,7 +53,7 @@ namespace Project.Tests
     public void RepeatWordCounter_ChangesCommasandPeriodsToBlanks_sentenceCommasandPeriods()
     {
       RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello, There");
-      Assert.AreEqual(newCounter.sentenceCommasandPeriods(), "hello  there");
+      Assert.AreEqual(newCounter.sentenceCommasandPeriods(), 1);
     }
   }
 }
