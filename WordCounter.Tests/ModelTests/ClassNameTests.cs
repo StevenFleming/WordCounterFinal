@@ -40,5 +40,13 @@ namespace Project.Tests
       RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hel3lo Th3ere");
       Assert.AreEqual(newCounter.SentenceCheckNumbers(), false);
     }
+
+    [TestMethod]
+    public void RepeatWordCounter_ChangesNumberProperty_CheckNumbs()
+    {
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hel3lo Th3ere");
+      newCounter.CheckNums();
+      Assert.AreEqual(newCounter.Numbers, false);
+    }
   }
 }
