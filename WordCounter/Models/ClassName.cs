@@ -9,12 +9,24 @@ namespace WordCounter
     public string Word { get; set; }
     public string Sentence { get; set; }
 
+    public bool Numbers { get; set; }
+
+
     //Constructor
     public RepeatWordCounter(string word, string sentence)
     {
       MatchCount = 0;
-      Word = word.ToLower();
-      Sentence = sentence.ToLower();
+      Word = word.ToLower().Trim();
+      Sentence = sentence.ToLower().Trim();
+      Numbers = true;
+    }
+
+    public void CheckNums()
+    {
+      if (WordCheckNumbers() == false || SentenceCheckNumbers() == false)
+      {
+        Numbers = false;
+      }
     }
 
     public bool WordCheckNumbers()
@@ -31,8 +43,6 @@ namespace WordCounter
         }
       }
       return true;
-      {
-      }
     }
 
     public bool SentenceCheckNumbers()
@@ -49,15 +59,8 @@ namespace WordCounter
         }
       }
       return true;
-      {
-      }
     }
 
-
-    // public bool WordCheckOtherExpressions()
-    // {
-
-    // }
 
     public int SentenceCheckWord()
     {
@@ -71,13 +74,26 @@ namespace WordCounter
       }
       return MatchCount;
     }
+
+    public string sentenceCommasandPeriods()
+    {
+      string BlankSpace = "   ";
+      string[] sentenceArray = Sentence.Split("");
+      for (int i = 0; i < sentenceArray.Length; i++)
+      {
+        if (sentenceArray[i] == "," || sentenceArray[i] == ".")
+        {
+          sentenceArray[i] = BlankSpace;
+        }
+      }
+      return string.Join("", sentenceArray);
+    }
   }
 }
 
 
 
 
-// char[] numberArray = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 // char[] checkNumArray = userWord.ToCharArray("a");
 // return checkNumArray[0];
 

@@ -12,7 +12,7 @@ namespace Project
       string userSentence = Console.ReadLine();
       Console.WriteLine("Please input what word you would like to check");
       string userWord = Console.ReadLine();
-      Console.WriteLine(userSentence + userWord);
+      RepeatWordCounter newCounter = new RepeatWordCounter(userSentence, userWord);
     }
   }
 }
