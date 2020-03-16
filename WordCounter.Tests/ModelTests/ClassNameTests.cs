@@ -23,8 +23,8 @@ namespace Project.Tests
     [TestMethod]
     public void RepeatWordCounter_ReturnsCountofMatchingWordsinSentence_SentenceCheckWord()
     {
-      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There");
-      Assert.AreEqual(newCounter.SentenceCheckWord(), 1);
+      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello There Hello");
+      Assert.AreEqual(newCounter.SentenceCheckWord(), 2);
     }
 
     [TestMethod]
@@ -49,12 +49,12 @@ namespace Project.Tests
       Assert.AreEqual(newCounter.Numbers, false);
     }
 
-    // Code still needs work
-    // [TestMethod]
-    public void RepeatWordCounter_ChangesCommasandPeriodsToBlanks_sentenceCommasandPeriods()
-    {
-      RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello, There");
-      Assert.AreEqual(newCounter.sentenceCommasandPeriods(), ",");
-    }
+    // // Code still needs work
+    // // [TestMethod]
+    // public void RepeatWordCounter_ChangesCommasandPeriodsToBlanks_sentenceCommasandPeriods()
+    // {
+    //   RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello, There");
+    //   Assert.AreEqual(newCounter.sentenceCommasandPeriods(), ",");
+    // }
   }
 }

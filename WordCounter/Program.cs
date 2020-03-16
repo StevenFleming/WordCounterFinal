@@ -12,7 +12,8 @@ namespace Project
       string userSentence = Console.ReadLine();
       Console.WriteLine("Please input what word you would like to check");
       string userWord = Console.ReadLine();
-      RepeatWordCounter newCounter = new RepeatWordCounter(userSentence, userWord);
+      RepeatWordCounter newCounter = new RepeatWordCounter(userWord, userSentence);
+      Console.WriteLine($"your word appears {newCounter.SentenceCheckWord()} times in your sentance");
     }
   }
 }

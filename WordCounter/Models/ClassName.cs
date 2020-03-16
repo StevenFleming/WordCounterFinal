@@ -74,20 +74,20 @@ namespace WordCounter
       }
       return MatchCount;
     }
-
-    public string sentenceCommasandPeriods()
-    {
-      string BlankSpace = "   ";
-      string[] sentenceArray = Sentence.Split("");
-      for (int i = 0; i < sentenceArray.Length; i++)
-      {
-        if (sentenceArray[i] == "," || sentenceArray[i] == ".")
-        {
-          sentenceArray[i] = BlankSpace;
-        }
-      }
-      return string.Join("", sentenceArray);
-    }
+    // Unfinished code 
+    // public int sentenceCommasandPeriods()
+    // {
+    //   int CountTest = 0;
+    //   string[] sentenceArray = Sentence.Split();
+    //   for (int i = 0; i < sentenceArray.Length; i++)
+    //   {
+    //     if (sentenceArray[i] == "," || sentenceArray[i] == ".")
+    //     {
+    //       CountTest++;
+    //     }
+    //   }
+    //   return sentenceArray.Length;
+    // }
   }
 }
 
