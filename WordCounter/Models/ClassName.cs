@@ -74,37 +74,9 @@ namespace WordCounter
       }
       return MatchCount;
     }
-    // Unfinished code 
-    // public int sentenceCommasandPeriods()
-    // {
-    //   int CountTest = 0;
-    //   string[] sentenceArray = Sentence.Split();
-    //   for (int i = 0; i < sentenceArray.Length; i++)
-    //   {
-    //     if (sentenceArray[i] == "," || sentenceArray[i] == ".")
-    //     {
-    //       CountTest++;
-    //     }
-    //   }
-    //   return sentenceArray.Length;
-    // }
   }
 }
 
 
 
 
-// char[] checkNumArray = userWord.ToCharArray("a");
-// return checkNumArray[0];
-
-//   for (int i = 0; i < checkNumArray.Length; i++)
-//   {
-//     for (int b = 0; b < numberArray.Length; b++)
-//     {
-//       if (CheckNumArray[i] == numberArray[b])
-//       {
-//         return false;
-//       }
-//     }
-//   }
-//   return true;

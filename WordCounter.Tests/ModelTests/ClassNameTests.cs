@@ -48,13 +48,5 @@ namespace Project.Tests
       newCounter.CheckNums();
       Assert.AreEqual(newCounter.Numbers, false);
     }
-
-    // // Code still needs work
-    // // [TestMethod]
-    // public void RepeatWordCounter_ChangesCommasandPeriodsToBlanks_sentenceCommasandPeriods()
-    // {
-    //   RepeatWordCounter newCounter = new RepeatWordCounter("Hello", "Hello, There");
-    //   Assert.AreEqual(newCounter.sentenceCommasandPeriods(), ",");
-    // }
   }
 }
